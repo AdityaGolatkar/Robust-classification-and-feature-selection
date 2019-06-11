@@ -1,0 +1,65 @@
+Synthetic
+
+PD
+
+python main.py --log-name pd_soft_syn --algorithm pd_soft --dataset Synthetic --niter 100 --tau 0.01 --tau_mu 0.1 --lamda 0.015 --train-size 1000 --save-fig
+
+python main.py --log-name pd_const_syn --algorithm pd_const --dataset Synthetic --niter 100 --tau 0.01 --tau_mu 0.1 --eta 50 --train-size 1000 --save-fig
+
+python main.py --log-name pd_const_over_syn --algorithm pd_const_over --dataset Synthetic --niter 100 --tau 0.01 --tau_mu 0.1 --eta 50 --gamma 0.1 --train-size 1000 --save-fig
+
+python main.py --log-name pd_frob_syn --algorithm pd_frob --dataset Synthetic --niter 100 --tau 0.1 --tau_mu 0.1 --eta 50 --train-size 1000 --save-fig
+
+python main.py --log-name pd_frob_over_syn --algorithm pd_frob_over --dataset Synthetic --niter 100 --tau 0.1 --tau_mu 0.1 --eta 50 --gamma 0.1 --train-size 1000 --save-fig
+
+python main.py --log-name pd_elastic_syn --algorithm pd_elastic --dataset Synthetic --niter 100 --tau 0.01 --tau_mu 0.03 --eta 50 --train-size 1000 --save-fig
+
+
+ADMM
+
+python main.py --log-name admm_soft_syn --algorithm admm_soft --dataset Synthetic --tau 50 --lamda 1 --niter 100 --train-size 1000 --save-fig
+
+python main.py --log-name admm_const_syn --algorithm admm_const --dataset Synthetic --tau 125 --eta 40 --niter 100 --train-size 1000 --save-fig
+
+python main.py --log-name admm_const_over_syn --algorithm admm_const_over --dataset Synthetic --tau 125 --eta 40 --niter 100 --train-size 1000 --gamma 0.1 --save-fig
+
+python main.py --log-name admm_frob_syn --algorithm admm_frob --dataset Synthetic --tau 125 --eta 40 --niter 100 --train-size 1000 --save-fig
+
+python main.py --log-name admm_frob_over_syn --algorithm admm_frob_over --dataset Synthetic --tau 125 --eta 40 --niter 100 --train-size 1000 --gamma 0.3 --save-fig
+
+python main.py --log-name admm_elastic_syn --algorithm admm_elastic --dataset Synthetic --tau 125 --eta 40 --niter 100 --train-size 1000 --alpha 0.0001 --save-fig
+
+
+
+
+Digits
+
+PD
+
+python main.py --log-name pd_soft_digits --algorithm pd_soft --dataset Digits --niter 75 --tau 0.43 --tau_mu 0.001 --lamda 0.02 --train-size 100 --save-fig
+
+python main.py --log-name pd_const_digits --algorithm pd_const --dataset Digits --niter 75 --tau 0.43 --tau_mu 0.001 --eta 100 --train-size 100 --save-fig
+
+python main.py --log-name pd_const_over_digits --algorithm pd_const_over --dataset Digits --niter 75 --tau 0.43 --tau_mu 0.001 --eta 100 --train-size 100 --save-fig --gamma 0.1
+
+python main.py --log-name pd_frob_digits --algorithm pd_frob --dataset Digits --niter 75 --tau 1 --tau_mu 0.001 --eta 100 --train-size 100 --save-fig
+
+python main.py --log-name pd_frob_over_digits --algorithm pd_frob_over --dataset Digits --niter 75 --tau 1 --tau_mu 0.001 --eta 100 --train-size 100 --save-fig --gamma 0.1
+
+python main.py --log-name pd_elastic_digits --algorithm pd_elastic --dataset Digits --niter 75 --tau 0.43 --tau_mu 0.001 --eta 100 --train-size 100 --alpha 0.01 --save-fig
+
+
+ADMM
+
+python main.py --log-name admm_soft_digits --algorithm admm_soft --dataset Digits --tau 120 --lamda 0.8 --niter 200 --save-fig
+
+python main.py --log-name admm_const_digits --algorithm admm_const --dataset Digits --tau 150 --eta 50 --niter 200 --save-fig
+
+python main.py --log-name admm_const_over_digits --algorithm admm_const_over --dataset Digits --tau 150 --eta 50 --niter 200 --gamma 0.1 --save-fig
+
+python main.py --log-name admm_frob_digits --algorithm admm_frob --dataset Digits --tau 72 --eta 40 --niter 200 --save-fig
+
+python main.py --log-name admm_frob_over_digits --algorithm admm_frob_over --dataset Digits --tau 72 --eta 40 --niter 200 --save-fig --gamma 0.2
+
+python main.py --log-name admm_elastic_digits --algorithm admm_elastic --dataset Digits --tau 182 --eta 37 --niter 200 --save-fig
+
